@@ -1,0 +1,422 @@
+/* General styling */
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    border: none;
+}
+nav{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    background: fixed;
+   
+}
+.leftbox{
+    height: 60px;
+    width: 10%;
+    background-image: url(../img/logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+.middlebox{
+    height: 60px;
+    width: 50%;
+    align-content: center;
+   
+}
+.middlebox ul{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+ }
+#middlebox :hover{
+    color: red;
+    height: 20px; 
+    border-radius: 7px;
+    align-items: center;
+    background-position: center;
+    background-color: bisque; 
+}
+.rightbox{
+    height: 30px;
+    width: 15%;
+    align-content: center;
+    background-image: url(../img/images-removebg-preview.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 1%;
+} */
+h4{
+    font-weight: 0;
+}
+hr{
+    width: 100%;
+    color: bisque;
+    
+}
+section{
+    height: 700vh;
+    width: 100%;
+    background-color:grey;
+   align-items: center;
+   
+}
+
+.middle-box{
+    height: 600px;
+    width: 100%;
+     background-color: black; 
+    /* background-image: url(../img/lam2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center; */
+}
+.slider-wrapper{
+    position: relative;
+    width: 100%;
+
+ }
+.slider{
+    display: flex;
+     aspect-ratio: 4/2; 
+     overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+     scroll-behavior: smooth;  
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0,0% ,0%, 0.25); 
+} 
+ .slider img{
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: contain;
+
+
+} 
+ .slider-nav{
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+.slider-nav a{
+    width: 0.5rem;
+    height: 0.5rem;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #f3f3f8;
+    opacity: 0.75;
+    transition: opacity ease 0.30s;
+
+} 
+.slider-nav a:hover{
+    opacity: 3;
+    
+}
+
+h1{
+    color: aliceblue;
+    font-weight: 1000;
+    padding: 1%;
+    text-align: center;
+}
+h3{
+    font-weight: 500;
+    color: red;
+    font-style: italic
+}
+.boxdown{
+    width: 100%;
+    height: 150px;
+    background-color: #f3f3f8;
+    place-items: center;
+    margin-top: 9px;
+}
+h2{
+    color: black;
+    padding-top: 2%;
+    font-size: xx-large;
+}
+.parent-bottom{
+    height: 500px;
+    width: 80%;
+    /* background-color: blue;  */
+    display: flex;
+    justify-content: space-evenly;
+    place-self: center;
+}
+ .bottom-box1{
+    width: 30%;
+    height: 500px;
+    /* background-image: url(../img/lamboghini.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain; */
+} 
+.childbox1{
+    width: 100%;
+    height: 250;
+    background-image: url(../img/lamboghini.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.childbox11{
+    width: 100%;
+    height: 250px;
+    background-image: url(../img/tesla-cybertruck-2019_1577653267.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.bottom-box2{
+    width: 30%;
+    height: 500px;
+} 
+.childbox2{
+    width: 100%;
+    height: 250px;
+    background-image: url(../img/ferrari-296-gtb-4k-laptop-car-a49rcj1e2ax2er90.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.childbox22{
+    width: 100%;
+    height: 250px;
+    background-image: url(../img/benz.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.bottom-box3{
+    width: 30%;
+    height: 500px;
+    
+} 
+.childbox3{
+    width: 100%;
+    height: 250px;
+    background-image: url(../img/new\ benz.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.childbox33{
+    width: 100%;
+    height: 250px;
+    background-image: url(../img/rolls.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.boxprice-parent{
+    height: 700px;
+    width: 80%;
+    /* background-color: brown; */
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    place-self: center;
+}
+.boxprice-child1{
+    height: 600px;
+    width: 24%;
+    /* background-color: black; */
+    
+}
+.grandprice1{
+    height: 240px;
+    width: 100%;
+    /* background-color: aliceblue; */
+    margin-top: 3%;
+    background-image: url(../img/toyota2021.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.grandprice2{
+    height: 200px;
+    width: 100%;
+    background-color: grey;
+    margin-top: 4%;
+}
+.boxprice-child2{
+    height: 600px;
+    width: 24%;
+    /* background-color: black; */
+} 
+.boxprice-child3{
+    height: 600px;
+    width: 24%;
+    /* background-color: black; */
+} 
+.boxprice-child4{
+    height: 600px;
+    width: 24%;
+    /* background-color: black; */
+} 
+.grandprice11{
+    height: 240px;
+    width: 100%;
+    margin-top: 3%;
+    background-image: url(../img/rollsroyce.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.grandprice22{
+    height: 200px;
+    width: 100%;
+    background-color: grey;
+    margin-top: 4%;
+}
+.grandprice12{
+    height: 240px;
+    width: 100%;
+    margin-top: 3%;
+    background-image: url(../img/teslanew.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.grandprice23{
+    height: 200px;
+    width: 100%;
+    background-color: grey;
+    margin-top: 4%;
+    
+}
+.grandprice13{
+    height: 240px;
+    width: 100%;
+    margin-top: 3%;
+    background-image: url(../img/lambsorghiniurus.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.grandprice24{
+    height: 200px;
+    width: 100%;
+    background-color: grey;
+    margin-top: 4%;
+}
+button{
+    color: white;
+    background-color: red;
+    text-align: center;
+    font-style: oblique;
+    font-size: large;
+}
+.container-bottom{
+    height: 600px;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    place-self: center;
+
+}
+
+.child1-container{
+    height: 500px;
+    width: 20%;
+}
+.child1-container ul{
+    font-weight: 700;
+    color: #f3f3f8;
+    display: block;
+ } 
+
+.child2-container{
+    height: 500px;
+    width: 20%;
+    
+}
+
+
+
+.child3-container{
+    height: 500px;
+    width: 20%;
+    
+}
+
+
+
+.child4-container{
+    height: 500px;
+    width: 20%;
+
+}
+
+.endingsection{
+    height: 500px;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly; 
+    background-color: #fef7f4; 
+    place-self: center;
+    align-items: center;
+}
+h4{
+    font-size: 70px;
+    color: black;
+    text-align: center;
+}
+h5{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+p{
+    color: red;
+}
+.endingchild1{
+    height: 450px;
+    width: 20%;
+    background-color:#ffffff;
+}
+
+.endingchild2{
+    height: 450px;
+    width: 20%;
+    background-color:#ffffff;
+}
+
+.endingchild3{
+    height: 450px;
+    width: 20%;
+    background-color: #ffffff;
+}
+
+.endingchild4{
+    height: 450px;
+    width: 20%;
+    background-color: #ffffff;
+}
+
+h6{
+    color: black;
+    font-size: large;
+    text-align: center;
+}
+
+.endingparentbox{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
